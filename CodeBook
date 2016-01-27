@@ -1,0 +1,18 @@
+# Introduction
+
+The script `run_analysis.R`performs the 5 steps described in the course project's definition.
+
+* dplyr is called as required to perform subsequent functions
+* Data and Data Labels are merged using `rbind()` function. 
+* Mean and Standard Deviation measurement columns are extracts
+* A new dataset(`averages_data.txt`) with average measures for each subject and activity type is created
+
+# Variables
+
+* `x_train`, `y_train`, `x_test`, `y_test`, `subject_train` and `subject_test` contain the data from the downloaded files.
+* `x`, `y` and `s` merge the previous datasets to further analysis.
+* `features` contains the correct column names for the `x_data` dataset,
+* `index_features`, a numeric vector used to extract the desired data.
+* 'activities' contains the correct descriptions for the actvities in the data set
+* `tidyDataSet` merges `x`, `y` and `s`.
+* `tidyDataAVGSet` averages each variable for each activity and subject.
